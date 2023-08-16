@@ -533,7 +533,7 @@ address {
   color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   position: absolute;
   top: 8px;
@@ -572,7 +572,7 @@ address {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
 }
 
@@ -608,10 +608,11 @@ address {
   width: 16px;
   height: 16px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
-}
-
-.check-icon {
-  fill: none;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 
 .check-input:checked + .check-label > .modal-span {
