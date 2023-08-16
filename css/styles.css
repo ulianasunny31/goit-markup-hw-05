@@ -194,11 +194,11 @@ footer .span-logo {
 }
 
 .subscribe-btn {
-  font-family: "Roboto";
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   color: var(--white);
   display: flex;
   justify-content: center;
@@ -460,13 +460,6 @@ address {
   |============================
 */
 
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .form-title {
   color: var(--navyblue);
   text-align: center;
@@ -489,17 +482,13 @@ address {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--lightslate);
+  color: var(--light-slate);
   display: block;
   margin-bottom: 4px;
 }
 
 .input-container {
   position: relative;
-}
-
-.input-container .text {
-  margin-bottom: 16px;
 }
 
 .input-modal {
@@ -521,6 +510,10 @@ address {
   cursor: pointer;
   fill: var(--navy-blue);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-cont {
+  margin-bottom: 16px;
 }
 
 .textarea-modal {
@@ -580,7 +573,7 @@ address {
 }
 
 .check-label {
-  color: var(--lightslate);
+  color: var(--light-slate);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -615,6 +608,12 @@ address {
   height: 56px;
   cursor: pointer;
   font-family: inherit;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: var(--ocean);
 }
 
 .modal-span {
@@ -629,6 +628,7 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 8px;
 }
 
 .check-input:checked + .check-label > .modal-span {
